@@ -1,4 +1,4 @@
-package com.syndes.javacomponents
+package com.syndes.javacomponents;
 
 import android.content.Intent;
 import android.os.Bundle;
