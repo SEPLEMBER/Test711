@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LIGHT THEME (Olive) -->
+    <color name="primary_light">#6B8E23</color> <!-- Olive green -->
+    <color name="accent_light">#8FBC8F</color> <!-- Sage accent -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="text_light">#333333</color>
+
+    <!-- DARK THEME (Purple) -->
+    <color name="primary_dark">#7E57C2</color> <!-- Soft purple -->
+    <color name="accent_dark">#512DA8</color> <!-- Deep violet -->
+    <color name="background_dark">#0A0A0A</color>
+    <color name="text_dark">#E0E0E0</color>
+
+<!-- AMOLED THEME (Soft Amber) -->
+<color name="primary_amoled">#FFB74D</color> <!-- Soft amber -->
+<color name="accent_amoled">#FF9800</color> <!-- Muted orange -->
+<color name="background_amoled">#000000</color> <!-- True black -->
+<color name="text_amoled">#E0E0E0</color> <!-- Soft light gray -->
+
+</resources>
