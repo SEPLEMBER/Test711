@@ -48,7 +48,7 @@ public class ZLSActivity extends AppCompatActivity {
         @Override
         public void run() {
             cancelAllPending(); // аккуратно убираем все callbacks
-            Intent intent = new Intent(ZLSActivity.this, LockActivity.class);
+            Intent intent = new Intent(ZLSActivity.this, LaunchActivity.class);
             startActivity(intent);
             finish();
         }
@@ -102,7 +102,7 @@ public class ZLSActivity extends AppCompatActivity {
                         handler.removeCallbacks(dotRunnable);
                         handler.removeCallbacks(resetTapRunnable);
                         // Можно также сразу показать какой-то визуальный отклик, но по задаче — просто переход
-                        Intent i = new Intent(ZLSActivity.this, LaunchActivity.class);
+                        Intent i = new Intent(ZLSActivity.this, LockActivity.class);
                         startActivity(i);
                         finish();
                     }
