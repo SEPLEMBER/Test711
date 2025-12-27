@@ -9,7 +9,7 @@
         android:id="@+id/zls_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ZLS run"
+        android:text="ZLS compiler running"
         android:textColor="#9C27B0"
         android:textSize="22sp"
         android:layout_gravity="center"
