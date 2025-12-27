@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.app">
-
-    <!--
-        Опционально: permission, если вы захотите ограничить доступ к ZLSActivity
-        только приложениями, подписанными вашей подписью (protectionLevel="signature").
-        Раскомментируйте и добавьте android:permission к ZLSActivity если нужно.
-    -->
-    <!--
-    <permission
-        android:name="com.example.app.PERMISSION_OPEN_ZLS"
-        android:label="Permission to open ZLSActivity"
-        android:protectionLevel="signature" />
-    -->
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:label="@string/app_name"
@@ -21,7 +8,6 @@
         android:theme="@style/AppTheme"
         tools:targetApi="33">
 
-        <!-- LaunchActivity — главный LAUNCHER -->
         <activity
             android:name=".LaunchActivity"
             android:exported="true"
@@ -32,14 +18,12 @@
             </intent-filter>
         </activity>
 
-        <!-- CheckActivity — теперь внутренний (не экспортируется) -->
         <activity
-            android:name=".CheckActivity"
+            android:name=".LockActivity"
             android:exported="false"
             android:label="@string/app_name" >
         </activity>
 
-        <!-- MainActivity c adjustResize для клавиатуры -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
@@ -53,23 +37,14 @@
             android:label="@string/title_activity_settings" >
         </activity>
 
-        <!-- ZLSActivity — экспортируемая: доступна из других приложений.
-             ПРИМЕЧАНИЕ: при android:exported="true" убедитесь, что вы валидируете все входные данные.
-             Если хотите ограничить доступ только своим приложениям — используйте android:permission
-             и объявите permission с protectionLevel="signature" (см. комментарий выше).
-        -->
         <activity
             android:name=".ZLSActivity"
             android:exported="true"
             android:label="ZLS">
-            
-            <!-- Вариант A: кастомный action — простой и явный -->
             <intent-filter>
                 <action android:name="com.example.app.ACTION_OPEN_ZLS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-            <!-- Вариант B: https deep link, например https://example.com/zls -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -81,5 +56,6 @@
             </intent-filter>
         </activity>
 
+        <!-- ZLShelloActivity предполагается уже объявленной в манифесте с exported="false" -->
     </application>
 </manifest>
