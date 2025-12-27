@@ -1,4 +1,4 @@
-package com.syndes.javacomponents
+package com.syndes.javacomponents;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
