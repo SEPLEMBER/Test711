@@ -22,7 +22,7 @@ package com.syndes.javacomponents;
  */
 public class Constants {
 
-    public static final String PREFERENCES_KEY = "com.syndes.SimpleTextCrypt.Preferences";
+    public static final String PREFERENCES_KEY = "com.syndes.JavaComponents.Preferences";
     public static final String ENCRYPTION_KEY_SETTINGS_KEY = "EncryptionKeySettingsKey";
     public static final String PASSCODE_SETTINGS_KEY = "PasscodeSettingsKey";
     public static final String LOCK_TIMEOUT_SETTINGS_KEY = "LockTimeoutSettingsKey";
