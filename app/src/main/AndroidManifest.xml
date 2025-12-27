@@ -21,31 +21,31 @@
         <activity
             android:name=".LockActivity"
             android:exported="false"
-            android:label="..."
+            android:label="...">
         </activity>
 
-<activity
-    android:name=".MainActivity"
-    android:exported="false"
-    android:label="..."
-    android:windowSoftInputMode="adjustResize|stateHidden" >
-</activity>
-
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="..."
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
 
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
-            android:label="@string/title_activity_settings" >
+            android:label="@string/title_activity_settings">
         </activity>
 
         <activity
             android:name=".ZLSActivity"
             android:exported="true"
-            android:label="Syndes Java Framework"
+            android:label="Syndes Java Framework">
             <intent-filter>
                 <action android:name="com.example.app.ACTION_OPEN_ZLS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -57,6 +57,5 @@
             </intent-filter>
         </activity>
 
-        <!-- ZLShelloActivity предполагается уже объявленной в манифесте с exported="false" -->
     </application>
 </manifest>
